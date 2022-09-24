@@ -1,1 +1,28 @@
-{{employeeList}}
+<section>
+    <h3>
+        Employees
+        <small class="text-muted">Active Employee List</small>
+      </h3>    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+
+
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr *ngFor="let e of employeeList, let i = index">
+            <th scope="row">{{i+1}}</th>
+            <td>{{e.first_name}}</td>
+            <td>{{e.last_name}}</td>
+            <td><a href="#" class="text-primary" >{{e.employee_id}}</a></td>
+
+          </tr>
+        </tbody>
+      </table>
+
+</section>
