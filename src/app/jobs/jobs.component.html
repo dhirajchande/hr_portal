@@ -1,1 +1,21 @@
-<p>jobs works!</p>
+<section>
+
+    <table datatable [dtOptions]="dtOptions" class="table">
+        <thead>
+          <tr>
+            <th scope="col">job id</th>
+            <th scope="col">job title</th>
+            <th scope="col">min salary</th>
+            <th scope="col">max salary</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let j of joblist">
+            <th scope="row">{{j.job_id}}</th>
+            <td >{{j.job_title}}</td>
+            <td>{{j.min_salary}}</td>
+            <td>{{j.max_salary}}</td>
+          </tr>
+        </tbody>
+      </table>
+</section>
