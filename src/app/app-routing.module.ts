@@ -6,6 +6,7 @@ import { JobFormComponent } from './job-form/job-form.component';
 import { JobsComponent } from './jobs/jobs.component';
 
 const routes: Routes = [
+    {path:"/", component:EmployeesComponent},
   {path:"/employees", component:EmployeesComponent},
   {path:"/jobs", component:JobsComponent},
   {path:"/jobform", component:JobFormComponent},
